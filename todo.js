@@ -66,6 +66,7 @@ function addTask() {
         }
         updateCounts();
     };
+    
     // new Element adding
     listItem.appendChild(taskSpan);
     listItem.appendChild(completeButton);
