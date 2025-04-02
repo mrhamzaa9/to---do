@@ -8,13 +8,20 @@ function updateCounts() {
 
 function addTask() {
     const taskInput = document.getElementById('todo-input');
-    const taskText = taskInput.value;
-    taskInput.value = !'';
+    const taskText = taskInput.value.trim();
+    const errorMessage = document.getElementById('error-message');
 
     if (taskText === '') {
-        alert('Please enter a task!');
+        errorMessage.textContent = 'Task cannot be empty!';
         return;
+    } else {
+        errorMessage.textContent = '';
     }
+
+    // if (taskText === '') {
+    //     alert('Please enter a task!');
+    //     return;
+    // }
 
     totalTasks++;
     updateCounts();
