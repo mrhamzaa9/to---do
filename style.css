@@ -40,7 +40,7 @@ body {
 
 @keyframes slideIn {
     from { transform: translateY(-20px); opacity: 0; -webkit-transform: translateY(-20px); -moz-transform: translateY(-20px); -ms-transform: translateY(-20px); -o-transform: translateY(-20px); }
-    to { transform: translateY(0); opacity: 1;  }
+    to { transform: translateY(0); opacity: 1; -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); }
 }
 
 .todo-container:hover {
@@ -147,6 +147,10 @@ li:hover {
 
 
 @media (max-width: 480px) {
+    body{
+        background: url('images/background.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
     .todo-container {
         width: 250px;
         padding: 20px;
