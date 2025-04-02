@@ -9,7 +9,7 @@ function updateCounts() {
 function addTask() {
     const taskInput = document.getElementById('todo-input');
     const taskText = taskInput.value.trim() ;
-
+    // trim is used for not blank spaces
     if (taskText === '') {
         alert('Please enter a task!');
         return;
