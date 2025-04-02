@@ -9,6 +9,7 @@ function updateCounts() {
 function addTask() {
     const taskInput = document.getElementById('todo-input');
     const taskText = taskInput.value;
+    taskInput.value = !'';
 
     if (taskText === '') {
         alert('Please enter a task!');
